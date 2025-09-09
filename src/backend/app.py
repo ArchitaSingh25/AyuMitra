@@ -1,13 +1,11 @@
 import streamlit as st
 from rag_logic import load_db, build_conversational_chain, save_feedback
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 import os
 import dotenv
-import time
 
 dotenv.load_dotenv()
 file_path = os.getenv("CSS_PATH")
-
 # ================================
 # Load external CSS
 # ================================
@@ -27,11 +25,16 @@ embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-
 # Streamlit UI Configuration
 # ================================
 st.set_page_config(
-    page_title="Chat with your AyuMITRA",
-    page_icon="🤖",
+    page_title="Chat with your AyuMITRA", 
+    page_icon="🤖", 
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
+# ================================
+# Custom CSS
+# ================================
+st.markdown("""<style> .stApp {background: #FFFF; color: #0f172a;} </style>""", unsafe_allow_html=True)
 
 # ================================
 # Sidebar
@@ -63,6 +66,32 @@ conv_chain, retriever, config = build_conversational_chain(db, session_id="chat1
 if "history" not in st.session_state:
     st.session_state["history"] = []   # [(sender, text)]
 
+# ================================
+# Query input
+# ================================
+query = st.text_area(
+    "User Query",   # non-empty label (required internally)
+    placeholder="Type your question here...",
+    height=100,
+    key="query_input",
+    label_visibility="collapsed"  # hides it from UI but keeps accessibility
+)
+
+if st.button("Get Answer", key="submit_query"):
+    if not query.strip():
+        st.warning("Please enter a query first.")
+    else:
+        with st.spinner("Processing your query..."):
+            try:
+                response = conv_chain.invoke({"question": query}, config=config)
+                st.session_state["history"].append(("You", query))
+                st.session_state["history"].append(("Bot", response))
+            except Exception as e:
+                st.error(f"Error: {str(e)}")
+
+# ================================
+# Feedback store (session-level)
+# ================================
 if "session_feedback" not in st.session_state:
     st.session_state["session_feedback"] = None  # store once per session
 
@@ -71,9 +100,9 @@ if "session_feedback" not in st.session_state:
 # ================================
 for sender, msg in st.session_state["history"]:
     if sender == "You":
-        st.markdown(f"**🧑 You:** {msg}")
+        st.markdown(f"**You:** {msg}")
     else:
-        st.markdown(f"**🤖 AyuMITRA:** {msg}")
+        st.markdown(f"**🤖 :** {msg}")
 
 # ================================
 # Doctor Feedback (once per session)
@@ -81,6 +110,7 @@ for sender, msg in st.session_state["history"]:
 if st.session_state["history"]:  # only show after at least one answer
     with st.expander("📝 Doctor Feedback"):
         if st.session_state["session_feedback"]:
+            # Already submitted → show it
             st.success(f"✅ Feedback saved: {st.session_state['session_feedback']}")
         else:
             with st.form("session_feedback_form"):
@@ -92,48 +122,13 @@ if st.session_state["history"]:  # only show after at least one answer
                         user_q = next((msg for sender, msg in reversed(st.session_state["history"]) if sender == "You"), "")
                         bot_ans = next((msg for sender, msg in reversed(st.session_state["history"]) if sender == "Bot"), "")
                         save_feedback(user_q, bot_ans, fb)
+
+                        # Lock for this session
                         st.session_state["session_feedback"] = fb
                         st.success("✅ Feedback saved successfully!")
                     else:
                         st.warning("Please provide feedback before submitting.")
 
-# ================================
-# Query Input (always at bottom)
-# ================================
-query = st.text_area(
-    "Type your message...",
-    placeholder="Ask your question here...",
-    height=80,
-    key="query_input"
-)
-
-if st.button("Send", key="submit_query"):
-    if not query.strip():
-        st.warning("Please enter a query first.")
-    else:
-        with st.spinner("Processing your query..."):
-            try:
-                response = conv_chain.invoke({"question": query}, config=config)
-
-                # Append user message
-                st.session_state["history"].append(("You", query))
-
-                # Typing effect for bot response
-                placeholder = st.empty()
-                generated_text = ""
-                for word in response.split():
-                    generated_text += word + " "
-                    placeholder.markdown(f"**🤖 AyuMITRA:** {generated_text}")
-                    time.sleep(0.05)
-
-                # Save final bot response
-                st.session_state["history"].append(("Bot", response))
-
-                # Clear query input
-                st.session_state.query_input = ""
-
-            except Exception as e:
-                st.error(f"Error: {str(e)}")
 
 # ================================
 # Footer
@@ -142,6 +137,6 @@ st.markdown("---")
 st.markdown(
     '<div class="footer">'
     'Powered by VNIT(Nagpur) | Ayurvedic Knowledge Base'
-    '</div>',
+    '</div>', 
     unsafe_allow_html=True
 )
