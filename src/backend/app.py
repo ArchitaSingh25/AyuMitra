@@ -4,7 +4,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 import os
 #import dotenv
 
-dotenv.load_dotenv()
+#dotenv.load_dotenv()
 file_path = os.getenv("CSS_PATH")
 # ================================
 # Load external CSS
