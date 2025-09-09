@@ -10,6 +10,7 @@ from langchain_core.chat_history import BaseChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.messages import HumanMessage
 import pandas as pd
+import streamlit as st
 
 # ================================
 # Load environment variables
