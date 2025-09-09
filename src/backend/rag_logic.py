@@ -1,5 +1,5 @@
 import os
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 from langchain_chroma  import Chroma
 from langchain_core.runnables import RunnableMap
 from langchain_core.prompts import ChatPromptTemplate,MessagesPlaceholder
@@ -12,6 +12,8 @@ from langchain_core.messages import HumanMessage
 import pandas as pd
 import streamlit as st
 
+
+"""
 # ================================
 # Load environment variables
 # ================================
@@ -21,6 +23,19 @@ system_prompt_path = os.getenv("SYSTEM_PROMPT_PATH")
 db_path = os.getenv("DB_PATH")
 collection = os.getenv("COLLECTION_NAME")
 FEEDBACK_FILE = os.getenv("DOCTOR_FEEDBACK_FILE_PATH")
+"""
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Paths
+collection = st.secrets["paths"]["COLLECTION_NAME"]
+db_path = os.path.join(BASE_DIR, st.secrets["paths"]["DB_PATH"])
+FEEDBACK_FILE = os.path.join(BASE_DIR, st.secrets["paths"]["DOCTOR_FEEDBACK_FILE_PATH"])
+system_prompt_path = os.path.join(BASE_DIR, st.secrets["paths"]["SYSTEM_PROMPT_PATH"])
+
+
+# API Key
+GEMINI_API_KEY = st.secrets["api"]["GEMINI_API_KEY"]
 
 if not system_prompt_path or not db_path or not collection:
     raise ValueError("❌ Please set SYSTEM_PROMPT_PATH, DB_PATH, and COLLECTION_NAME in .env")
