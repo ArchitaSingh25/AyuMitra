@@ -2,9 +2,9 @@ import streamlit as st
 from rag_logic import load_db, build_conversational_chain, save_feedback
 from langchain_huggingface import HuggingFaceEmbeddings
 import os
-#import dotenv
+import dotenv
 
-#dotenv.load_dotenv()
+dotenv.load_dotenv()
 file_path = os.getenv("CSS_PATH")
 # ================================
 # Load external CSS
