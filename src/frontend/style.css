@@ -1,0 +1,87 @@
+.stApp {
+    background: #FFFF;
+    color: #0f172a;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 15px;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #243D5C;
+    text-align: center;
+    margin: 0;
+}
+
+.stTextArea textarea {
+    background-color: #FFFFFF !important;
+    color: black !important;
+    border: 1px solid #0 !important;
+    border-radius: 8px !important;
+}
+
+.stButton>button {
+    background: linear-gradient(45deg, #000000, #434343) !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 0.5rem 2rem !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
+}
+
+.stButton>button:hover {
+    background: linear-gradient(45deg, #ff6666, #ff8888) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(255, 68, 68, 0.3) !important;
+}
+
+.sidebar-section {
+    background-color: #50524D;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #50524D;
+}
+
+.sidebar-title {
+    color: #0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.clear-button {
+    background-color: #ff4444 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 5px !important;
+    padding: 0.5rem 1rem !important;
+    cursor: pointer !important;
+    width: 100% !important;
+}
+
+.answer-container {
+    background-color: #2d2d44;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #ff4444;
+    margin-top: 1rem;
+}
+
+.font-size {
+    font-size: 40px;
+}
+
+.footer {
+    text-align: center;
+    color: #0f172a;
+    font-size: 0.9rem;
+}
