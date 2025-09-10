@@ -1,6 +1,6 @@
 import os
 #from dotenv import load_dotenv
-from langchain_community.vectorstores  import Chroma
+from langchain_chroma  import Chroma
 from langchain_core.runnables import RunnableMap
 from langchain_core.prompts import ChatPromptTemplate,MessagesPlaceholder
 from langchain_core.output_parsers import StrOutputParser
