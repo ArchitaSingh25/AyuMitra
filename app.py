@@ -1,5 +1,5 @@
 import streamlit as st
-from backend.rag_logic import load_db, build_conversational_chain, save_feedback
+from rag_logic import load_db, build_conversational_chain, save_feedback
 from langchain_huggingface import HuggingFaceEmbeddings
 import os
 #import dotenv
