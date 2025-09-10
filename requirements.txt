@@ -10,3 +10,6 @@ langchain-ollama
 langchain_google_genai
 streamlit
 openpyxl
+langchain-chroma
+pysqlite3-binary
+
