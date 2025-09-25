@@ -88,16 +88,7 @@ query = st.selectbox(
     key="query_input"
 )
 
-"""
-query = st.text_area(
-    "User Query",   # non-empty label (required internally)
-    placeholder="Type your question here...",
-    height=100,
-    key="query_input",
-    label_visibility="collapsed"  # hides it from UI but keeps accessibility
-)
 
-"""
 if st.button("Get Answer", key="submit_query"):
     if not query.strip():
         st.warning("Please enter a query first.")
