@@ -77,6 +77,18 @@ if "history" not in st.session_state:
 # ================================
 # Query input
 # ================================
+query = st.selectbox(
+    "Select your query",
+    [
+        "tachycardia,feeling of dryness in heart,stiffness of heart,syncope",
+        "fever+cough+hiccups+asthama+change in taste of mouth+thirst+severe syncope+vomiting+repeatedly spit+pain in chest or in other region +anorexia",
+        "heart burn+syncope+to be afraid+fever+heat up+yellowing of body",
+        "heaviness in heart+stiffness in heart+dribbling+fever+cough"
+    ],
+    key="query_input"
+)
+
+"""
 query = st.text_area(
     "User Query",   # non-empty label (required internally)
     placeholder="Type your question here...",
@@ -85,6 +97,7 @@ query = st.text_area(
     label_visibility="collapsed"  # hides it from UI but keeps accessibility
 )
 
+"""
 if st.button("Get Answer", key="submit_query"):
     if not query.strip():
         st.warning("Please enter a query first.")
