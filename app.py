@@ -13,30 +13,8 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 file_path = os.path.join(BASE_DIR, st.secrets["paths"]["CSS_PATH"])
 list_of_symptoms=[
-'fever+cough+hiccups+asthama+change in taste of mouth+thirst+severe syncope+vomiting+repeatedly spit+pain in chest or in other region +anorexia',
-'tachycardia+feeling of dryness in heart+stiffness of heart+syncope',
-'heart burn+syncope+to be afraid+fever+heat up+yellowing of body',
-'heaviness in heart+stiffness in heart+dribbling+fever+cough',
-'intense heart ache+pricking pain in heart+itching of heart',
-'severe pain in urinary bladder+intense pain in penis+frequent urination in less quantity',
-'yellow urine+blood in urine+pain during urination+burning during urination+difficulty in urination',
-'heaviness of urinary bladder+heaviness of penis+swelling on penis+sticky urine',
-'obstruction in urination+pain in urinary bladder+pain from scrotum to anus +pain in penis+pain in urinary bladder+multiple streams of urine+repeatedly rubbing the penis by hand due to pain+frequent defeacation+frequent urination+blood in urine',
-'pain in inguinal region+pain in urinary bladder+pain in penis+scrotum growth+painful urination',
-'little urination with intense pain+bloating of urinary bladder+heaviness of urinary bladder',
-'continuous desire for copulation+difficulty in breathing+absence of sperm',
-'loss of excitement',
-'redness in penis+extension of skin of penis+fast formation of abscesses on penis+reddish discharge from abscesses of penis+blackish discharge from abscesses of penis+blueish discharge from abscesses of penis+smelly discharge from abscesses of penis+burning sensation with pain+sticky discharge from abscesses of penis+whitish discharge from abscesses of penis+swelling of penis decreases and it becomes immobile and with less discharge',
-'causes another diseases',
-'epilepsy',
-'body stiffness+ Hands stiffness+ legs stiffnesa head stiffness+ back stiffness+ hip stiffness',
-'stiffed mouth',
-'motionless +hard to touch+loose discharge +heavy pain +pricking pain ',
-'thirsty+unconsiousness+fever+burning sensation ',
-'heaviness in body+slight pain+loose discharge',
-'heavy discharge',
-'pain in inflammation+burning sensation+redness in that region+pricking pain',
-'with distorted color+heavy discharge+too much pain present',
+'cold',
+'fever',
 'slight pain'
  ]
 
@@ -103,13 +81,14 @@ if "history" not in st.session_state:
 # ================================
 # Query input
 # ================================
-query = st.selectbox(
-    "Select your query",
+selections = st.multiselect(
+    "Choose your symptoms",
     list_of_symptoms,
-    index=None,
+    accept_new_options=True
     key="query_input"
 )
 
+query=", ".join(selections)
 
 if st.button("Get Answer", key="submit_query"):
     if not query.strip():
