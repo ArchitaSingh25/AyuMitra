@@ -84,7 +84,7 @@ if "history" not in st.session_state:
 selections = st.multiselect(
     "Choose your symptoms",
     list_of_symptoms,
-    accept_new_options=True
+    accept_new_options=True,
     key="query_input"
 )
 
