@@ -15,7 +15,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # ================================
 # Load Symptoms
 # ================================
-symptoms_path=os.path.normpath(BASE_DIR,st.secrets["paths"]["SYMPTOMS_PATH"])
+symptoms_path=os.path.join(BASE_DIR,st.secrets["paths"]["SYMPTOMS_PATH"])
 with open(symptoms_path, "r", encoding="utf-8") as f:
     list_of_symptoms = [line.strip() for line in f]
 
