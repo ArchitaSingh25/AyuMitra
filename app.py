@@ -11,16 +11,20 @@ sys.modules["sqlite3"] = pysqlite3
 #file_path = os.getenv("CSS_PATH")
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-file_path = os.path.join(BASE_DIR, st.secrets["paths"]["CSS_PATH"])
-list_of_symptoms=[
-'cold',
-'fever',
-'slight pain'
- ]
+
+# ================================
+# Load Symptoms
+# ================================
+symptoms_path=os.path.normpath(BASE_DIR,st.secrets["paths"]["SYMPTOMS_PATH"])
+with open(symptoms_path, "r", encoding="utf-8") as f:
+    list_of_symptoms = [line.strip() for line in f]
+
 
 # ================================
 # Load external CSS
 # ================================
+file_path = os.path.join(BASE_DIR, st.secrets["paths"]["CSS_PATH"])
+
 def load_css(file_path: str):
     with open(file_path, "r") as f:
         css = f.read()
