@@ -8,7 +8,7 @@ thirst
 severe syncope
 vomiting
 repeatedly spit
-pain in chest or in other region 
+pain in chest or in other region
 anorexia
 tachycardia
 feeling of dryness in heart
@@ -37,7 +37,7 @@ swelling on penis
 sticky urine
 obstruction in urination
 pain in urinary bladder
-pain from scrotum to anus 
+pain from scrotum to anus
 pain in penis
 multiple streams of urine
 repeatedly rubbing the penis by hand due to pain
@@ -66,18 +66,481 @@ swelling of penis decreases and it becomes immobile and with less discharge
 causes another diseases
 epilepsy
 body stiffness
-Hands stiffness
+hands stiffness
 legs stiffnesa
 head stiffness
 back stiffness
 hip stiffness
 stiffed mouth
-motionless 
+motionless
 hard to touch
-loose discharge 
-heavy pain 
-pricking pain 
+loose discharge
+heavy pain
+pricking pain
 thirsty
 unconsiousness
-fever
-burning sensation 
+burning sensation
+heaviness in body
+slight pain
+heavy discharge
+pain in inflammation
+redness in that region
+with distorted  color
+to much pain present
+frothy vaginal bleeding
+watery vaginal bleeding
+dry vaginal bleeding
+reddish black vaginal bleeding
+sacred flower coloured vaginal bleeding
+sometimes painful sometimes not
+extreme hot vaginal bleeding
+heavy vaginal bleeding
+balsamic vaginal bleeding
+cool vaginal bleeding
+vaginal bleeding with kapha
+compact vaginal bleeding
+reduced vaginal bleeding
+smelly vaginal bleeding
+ghee like vaginal bleeding
+majja like vaginal bleeding
+vasa like vaginal bleeding
+continuous vaginal bleeding
+urinary obstruction
+constipation
+inguinal hernia
+heart disease
+piles
+flatus obstruction
+abdominal pain
+bloating
+urinary calculi
+inguinal pain
+pain in thighs
+sacral pain
+pain in leg region
+back pain
+pain in heart
+pain in belly region
+burping
+cholera
+throat dryness
+dispnea on exertion
+rumbling
+pain
+dryness of skin
+loss touch sensation
+thinning of skin layer
+pricking  pain
+pain in joints
+skin discoloration
+lean
+pimples
+stiffeness of limbs after meal
+heaviness of body
+body ache
+muscle and strength vasting
+insomnia
+legs stiffness
+thighs stiffness
+wrist stiffness
+tetanus
+neck stiffness
+yawning
+dribling
+uneasyness
+stiffed neck
+frothy semen
+watery semen
+dry semen
+inable to conceive
+blue coloured semen
+yellow coloured semen
+increased temperature of semen
+raw smelly semen
+obstruction of urethra
+extremly sticky semen
+semen with blood
+disfigurement of nose
+disfigurement of eyebrow
+chest stiffness
+disease of head
+headache
+heaviness of head
+runny nose
+pricking pain in vagina
+stiffness
+hardening
+numbness
+tiredness
+menstrual bleeding with sound
+menstrual bleeding with pain
+frothy menstrual bleeding
+diluted menstrual bleeding
+burning sensation in vaginal canal
+blue coloured menstrual bleeding
+yellow coloured menstrual bleeding
+hot vaginal discharge
+smelly vaginal discharge
+itching in vaginal canal
+stickiness in vaginal canal
+feeling of coldness in vaginal canal
+less pain in vaginal canal
+whitish menstrual bleeding
+sticky menstrual bleeding
+whitening of skin
+pain in vaginal canal
+white vaginal discharge
+sticky vaginal discharge
+more bleeding through vagina even in pregnancy
+no menstrual bleeding
+loss of body mass
+discoloration of body
+weakness
+pain in waist
+whitish vaginal discharge
+kaphaj and vataj diseases
+swelling in vagina
+blue coloured vaginal bleeding
+yellow coloured vaginal bleeding
+formation of comb like structure in vagina
+repeated fetal death
+vataj pain in bones of vaginal canal
+vataj pain in muscles of vaginal canal
+inability to copulate
+pinhole os of cervix of female fetus
+expulsion of semen inserted in vagina with or without pain after 6 or 7 days of copulation
+destruction of uterus in female fetus
+hatred for males
+absence of breasts
+obstructed uterus
+obstructed cervix
+opened cavity of cervical canal
+dry vaginal discharge
+frothy vaginal discharge
+mild redness in eyes
+pricking pain in eyes
+breaking like pain in eyes
+burning sensation in eyes
+intense pain in eyes
+more redness in eyes
+yellowish discharge from eyes
+hot tears from eyes
+whitish discharge from eyes
+sticky tears discharge from eyes
+heaviness in eyes
+itching in eyes
+sound in ears
+pain in ear
+drying of ear wax
+thin liquid discharge from ear
+inability to hear
+swelling in ear
+redness in ear
+burning sensation in ear
+yellow liquid discharge from ear containing foul smell
+inability to listen properly
+itching in ear
+stable swelling in one place
+greasy white discharge
+mild pain
+dullness of face
+foul smelling from nose
+swelling in nose
+vertigo
+blockage in nose due to excess cough.
+dryness in nose
+moist nose
+feels like smoke coming from nose
+inability to detect smell and taste
+burning sensation in nose
+redness of nose
+pus formation in nose
+bleeding from nose containing pus
+bleeding from ears containing pus
+bleeding from mouth containing pus
+chest pain
+nausea
+indigestion
+swelling of urinary bladder
+difficulty in passing stool
+passing dry stool
+dry body
+cold body
+laziness
+gasses
+obstructive urination with pain
+body bebding
+head disease
+nose disease
+eye disease
+mouth disease
+ear disease
+disease of eye
+facial paralysis
+migraine
+feeling of throat fullness
+feeling of mouth fullness
+itching
+votiligo
+swelling
+anemia
+skin disease
+erysipelas
+anus pain
+urine obstruction
+body pain
+fatigue
+dryness of throat
+dryness of mouth
+gnashing of teeth
+astringent in taste
+bitter taste in mouth
+sour taste in mouth
+tastelessness of mouth
+warmth in mouth
+foul smelling from mouth
+saltiness in mouth
+sweetness in mouth
+stickiness in mouth
+heaviness in mouth
+coldness in mouth
+cough in mouth
+presence of several tastes in mouth
+normal taste of mouth though refusal to eat
+skin becomes blackish
+skin becomes reddish
+brownish skin
+pulsation
+severe pain
+blackish skin
+vein strain
+blackish swelling
+dryness in swelling
+sometimes swelling increases
+sometimes swelling decreases
+pain in body parts
+hates cold thing
+unconsciousness
+sweating
+reddishness in affected area
+pain in affected area
+dryness in affected area
+dryness in mouth
+hardness in mouth
+roughness in mouth
+pain in different-different regions
+face turns black or red
+cold liquid discharge from mouth
+momentarily fall of teeth
+shivering of body
+pain like breaking of body
+more thirst
+ulcer in mouth
+burning sensation in palate
+feels like hot air coming from mouth
+cracks in lips
+dizziness
+many pains
+itching in mouth
+whitish mouth
+heaviness during movement of mouth
+salivation
+low digestive fire
+sleepiness
+mild pain in organs and mouth
+difficulty in committing
+vomitting with high intensity
+mucous in vomitting
+blackish vomitting
+vomitting in less quantity
+vomitting containing more water
+vomitting with astringent taste
+coughing
+soar throat
+pricking pain in the body
+to faint
+burning head
+burning eyes
+yellow vomiting
+greenish vomiting
+bitter vomiting
+sweetness of mouth
+feeling of stomach fullness
+body heaviness
+vomiting with mucous
+sweet vomiting
+vomiting with less efforts
+acidic vomiting
+salty vommitting
+bluish vomitting
+blood in vomitting
+excessive pain in head
+fluttering in head
+burning sensation and pain in head
+feeling of weight putted on head
+all symptoms
+foul smell
+faecal matter mixes in water
+undigested faecal matter
+thin faecal matter
+dry faecal matter
+faecal matter sinks in water
+foul smelling of faecal matter
+faecal matter comes out along with loud or slow sound
+stool comes out along with obstruction of urine and gases
+obstructed gases causes sound and pain in intestine
+binded stool
+slow sound during discharge of stool
+pain during discharge of stool
+stool with froath
+sticky stools
+goosebumps during discharge of stool
+breathlessness during discharge of stool
+pain in hip region
+pain in pelvic region
+pain in knee region
+pain in back
+pain in lateral side of chest region
+rupture of anal region
+yellowishness of stool
+greenish stool
+bluish stool
+blackish stool
+stool containing blood
+foul smelling of stool
+stomach ache
+burning in anal region
+whitish stool
+heavy stool
+foul smelling stool
+frequent passage of stool
+heavyness in stomach region
+heavyness in anal region
+heavyness in urinary bladder
+heavyness in inguinal region
+goosebumps
+excessive sleep
+sluggishness
+exhaustion
+refusal of food
+stool like piece of liver
+stool like curd
+stool like ghee
+stool like oil
+stool like fats
+stool like milk
+more bluish stool
+more reddish stool
+more blackish stool
+stool like clear water
+sticky stool
+undigested stool
+shiny stool
+pus like foul smell of stool
+stool smelling like fish
+rotten stool
+less stool
+asthma
+breathlessness
+sometimes less or more stomach ache
+widening of anus
+decrease in strength
+low blood
+pain in all joints and bones
+patter
+sudden cure of the disease
+xerostomia
+burning sensation in head region
+desire for cold food
+yellowishness of eye
+yellowishness of urine
+dribble
+pain in nose and pricking pain
+sneezing
+water like liquid discharge from nose
+headache and sore throat
+pus formation in front portion of nose
+discharge of hot yellow liquid from nose
+thick mucous discharge
+itching in nose
+intense pain
+injury like pain in nose
+watery discharge from nose
+inability to smell
+frequent cold
+feeling thirsty
+stomache
+bodyache
+shivering
+bronchial asthama
+pain in bones and joints region
+tingling
+obstruction in urine and stool
+bodyach
+more burning
+greenishness of eyes
+greenishness of urine
+greenishness of stool
+yellowishness of eyes
+freezing cold
+cold fever
+whitishness of nail
+whitishness of eyes
+whitishness of mouth
+whitishness of skin
+whitishness of urine
+whitishness of stool
+indigation
+hiccoughs
+breath
+increase in pain in lower limbs after touching the ground
+inability to stand up
+inability to stand for very long
+inability to walk
+unable to move lower limbs
+heart pain
+pain in head region
+dryness in chest
+sore throat
+unconciousness
+dry cough
+weakness in body
+intially dry cough present
+a lot of pain in the throat
+dysponea
+lean body
+eyes look attractive
+soles of the palm and feet remain oily
+sleep
+lethargy
+diarrhoea
+hiccup
+foamy vomit
+convulsion
+sensitivity of teeth
+skin discolouration
+dizzeness
+tremor
+yawing
+death
+foam from the mouth
+burninig sensation
+heaviness of tongue
+burning sensation in mouth
+hair fall
+burninig sensation in eyes
+redness of eyes
+pain in lateral aspect of chest
+delirium
+body becomes green
+burning
+heaviness
+more pain in body
+being unconscious
+pain in heart region
+become very thirsty
+constant loud yawing
+tired
+ear disorders
+eye disorders
+mouth disorders
